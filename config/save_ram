@@ -1,0 +1,24 @@
+// senos nenaudojamos funkcijos
+<!--<h1><?php include_once 'config/performance_stats.php'; echo "RAM: ".getSystemRamUsage()."/".getSystemMaxRam()." GB";?></h1>-->
+function getSystemMaxRam()
+{
+	$string = array_values(getSystemMemInfo());
+	//trim($string[0], 'kB');
+	//$string = serialize(urldecode($string));
+	$string[0] = $string[0] / 1000000;
+	$string[0] = substr($string[0], 0, -3);
+	return $string[0];
+}
+function getSystemRamUsage()
+{
+	$string = array_values(getSystemMemInfo());
+	$string[1] = $string[1] / 1000000;
+	$string[1] = substr($string[1], 0, -3);
+	return $string[1];
+}
+
+function getStats()
+{
+echo"<p><span class='description'>Server Memory Usage:</span> <span class='result'>".substr(get_server_memory_usage(), 0, -13)."%</span></p>";
+echo"<p><span class='description'>Server CPU Usage: </span> <span class='result'>".get_server_cpu_usage()."%</span></p>";
+}

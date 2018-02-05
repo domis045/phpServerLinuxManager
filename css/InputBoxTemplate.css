@@ -1,0 +1,137 @@
+#kalba {
+	border-spacing: 10px;
+	border-collapse: separate;
+}
+
+#kalba th {
+	width:50px;
+}
+
+#id {
+	border-spacing: 10px;
+	border-collapse: separate;
+	/*background-color: red;*/
+	/*border-radius:10px;*/
+}
+#id th {
+	width:150px;
+}
+
+.wrap {
+	/*border:1px solid red;*/
+    margin: 20px auto;
+    display: block;
+    width: 600px;
+    min-height: 110px;
+    /*padding: 20px; patikrinti*/
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:20px;
+	padding-bottom:5px;
+    position: relative;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aaaeaf), color-stop(100%, #689ecd));
+    background-image: -webkit-linear-gradient(#aaaeaf, #689ecd);
+    background-image: -moz-linear-gradient(#aaaeaf, #689ecd);
+    background-image: -o-linear-gradient(#aaaeaf, #689ecd);
+    background-image: -ms-linear-gradient(#aaaeaf, #689ecd);
+    background-image: linear-gradient(#aaaeaf, #689ecd);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+.wrap * {
+    position: relative;
+}
+
+.wrap::before {
+    background: white;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    bottom: 1px;
+    content: '';
+    left: 1px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+}
+
+.wrap img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+p{ 
+    margin-top: 15px;
+    text-align: justify;
+}
+
+h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+a{
+    text-decoration: none;
+    color: #4A4A4A !important;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #6B6B6B !important ;
+}
+
+#button {
+  /*margin-top: 20px;*/
+  background: #27AE60;
+  border: none;
+  font-size: 1.2em;
+  font-weight: 300;
+  /*padding: 0px 0;*/
+  width: 100px;
+  height:30px;
+  border-radius: 3px;
+  color: #b3eecc;
+  border-bottom: 4px solid #1e8449;
+}
+
+#button:hover {
+  background: #2fb166;
+  -webkit-animation: hop 1s;
+  animation: hop 1s;
+}
+
+#kokia-kalba-desine {
+	position:right;
+}
+
+#top ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#top li {
+	margin:10px;
+    display: inline;
+}
+#top img {
+	margin-bottom:18px;
+	height:32px;
+	width:32px;
+}
+#p_nav {
+    padding-top: 150px;
+    text-align: justify;
+	
+}
